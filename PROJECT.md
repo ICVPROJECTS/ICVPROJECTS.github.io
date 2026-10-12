@@ -6,10 +6,10 @@ Sitio oficial de pre-lanzamiento de ICV IPTV, dirigido inicialmente a usuarios d
 
 ## Estado actual
 
-- Sitio estático completo, validado visualmente en escritorio y móvil y listo para publicación.
-- Nombre objetivo del repositorio: `ICVPROJECTS.github.io`.
-- URL objetivo: `https://icvprojects.github.io`.
-- La publicación en GitHub Pages está pendiente de crear el repositorio público y cargar esta fuente.
+- Sitio estático publicado y operativo mediante GitHub Pages.
+- Repositorio público: `ICVPROJECTS/ICVPROJECTS.github.io`.
+- URL pública: `https://icvprojects.github.io`.
+- El despliegue automático `pages-build-deployment #1` finalizó correctamente; portada, privacidad, términos, soporte y página 404 se validaron en producción.
 - Los planes y documentos legales se identifican como información de pre-lanzamiento; no hay cobro activo.
 
 ## Estructura del proyecto
@@ -58,9 +58,7 @@ icvprojects.github.io/
 
 ## Próximos pasos
 
-1. Crear el repositorio público `ICVPROJECTS.github.io` bajo la cuenta `ICVPROJECTS`.
-2. Cargar la fuente y habilitar GitHub Pages desde la rama `main` y la carpeta raíz.
-3. Verificar HTTPS y las cuatro rutas públicas en escritorio y móvil.
-4. Revisar jurídicamente privacidad y términos; reemplazar los avisos provisionales cuando se cierren los datos comerciales.
-5. Conectar un dominio propio en el futuro sin cambiar el repositorio ni el ID de la aplicación.
-6. Añadir enlaces de compra únicamente después de validar backend, proveedor de pagos, pruebas sandbox y políticas finales.
+1. Revisar jurídicamente privacidad y términos; reemplazar los avisos provisionales cuando se cierren los datos comerciales.
+2. Conectar un dominio propio en el futuro sin cambiar el repositorio ni el ID de la aplicación.
+3. Añadir enlaces de compra únicamente después de validar backend, proveedor de pagos, pruebas sandbox y políticas finales.
+4. Mantener la rama `main` libre de secretos y validar las rutas públicas después de cada publicación.

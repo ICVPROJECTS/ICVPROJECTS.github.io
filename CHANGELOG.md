@@ -1,5 +1,17 @@
 # Registro de cambios
 
+## [v0.2.0] - 2026-10-11
+
+### Añadido
+
+- Repositorio público `ICVPROJECTS/ICVPROJECTS.github.io` y primera publicación de la fuente estática en GitHub Pages.
+- Sitio disponible mediante HTTPS en `https://icvprojects.github.io`.
+
+### Validado
+
+- El despliegue automático de Pages terminó correctamente y se comprobaron en producción la portada, privacidad, términos, soporte y la respuesta 404 personalizada.
+- El escaneo previo a la carga no encontró credenciales, tokens, passphrases, llaves privadas ni direcciones de red local.
+
 ## [v0.1.3] - 2026-10-11
 
 ### Corregido

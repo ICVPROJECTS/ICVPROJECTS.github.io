@@ -16,7 +16,8 @@
 
 - Portada verificada a 1440×1000 y 390×844 sin desbordamiento horizontal; las cuatro imágenes cargan a 1920×1080.
 - Privacidad, términos, soporte y página 404 abren localmente con títulos y contenido válidos.
-- La publicación remota queda pendiente de confirmación porque la copia local no contiene el directorio `.git`.
+- Los commits de capturas y contenido activaron `pages-build-deployment #3` y `#4`; ambos finalizaron correctamente.
+- En producción se comprobaron las cuatro capturas a 1920×1080 y las rutas de privacidad, términos, soporte y 404 con el contenido actualizado.
 
 ## [v0.2.0] - 2026-10-11
 

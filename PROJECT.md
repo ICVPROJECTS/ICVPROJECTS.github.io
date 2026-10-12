@@ -12,7 +12,7 @@ Sitio oficial de pre-lanzamiento de ICV IPTV, dirigido inicialmente a usuarios d
 - El despliegue automático `pages-build-deployment #1` finalizó correctamente; portada, privacidad, términos, soporte y página 404 se validaron en producción.
 - Los planes y documentos legales se identifican como información de pre-lanzamiento; no hay cobro activo.
 - La fuente local incluye una galería con cuatro capturas reales 1920×1080 de la candidata, retención conforme al marco colombiano, impuestos liquidados por el procesador y licencia intransferible por TV.
-- La versión local v0.3.0 pasó validación a 1440×1000 y 390×844 sin desbordamiento; su publicación en GitHub Pages debe confirmarse porque esta carpeta de trabajo no conserva metadatos `.git`.
+- La versión v0.3.0 pasó validación a 1440×1000 y 390×844 sin desbordamiento y quedó publicada mediante `pages-build-deployment #4`; la portada y las cuatro rutas públicas se verificaron en producción.
 
 ## Estructura del proyecto
 
@@ -63,8 +63,7 @@ icvprojects.github.io/
 
 ## Próximos pasos
 
-1. Publicar la versión local v0.3.0 y comprobar en producción la galería y las cuatro rutas públicas.
-2. Revisar jurídicamente privacidad y términos; reemplazar los avisos provisionales cuando se definan hosting y procesador de pagos.
-3. Conectar un dominio propio en el futuro sin cambiar el repositorio ni el ID de la aplicación.
-4. Añadir enlaces de compra únicamente después de validar backend, proveedor de pagos, pruebas sandbox y políticas finales.
-5. Mantener la rama `main` libre de secretos y validar las rutas públicas después de cada publicación.
+1. Revisar jurídicamente privacidad y términos; reemplazar los avisos provisionales cuando se definan hosting y procesador de pagos.
+2. Conectar un dominio propio en el futuro sin cambiar el repositorio ni el ID de la aplicación.
+3. Añadir enlaces de compra únicamente después de validar backend, proveedor de pagos, pruebas sandbox y políticas finales.
+4. Mantener la rama `main` libre de secretos y validar las rutas públicas después de cada publicación.

@@ -1,5 +1,23 @@
 # Registro de cambios
 
+## [v0.3.0] - 2026-10-11
+
+### Añadido
+
+- Galería responsive con cuatro capturas reales 1920×1080 de Inicio, acceso IPTV, catálogo demo y Licencia.
+
+### Cambiado
+
+- Privacidad explica que URL, usuario y contraseña IPTV permanecen solo durante la sesión y que los datos heredados se purgan.
+- Privacidad incorpora retención bajo la Ley 1581 de 2012 y deja identificados como pendientes los proveedores definitivos de hosting y pagos.
+- Términos establecen una compra intransferible por TV, impuestos liquidados por el procesador y cancelación manual iniciada desde la app.
+
+### Validado
+
+- Portada verificada a 1440×1000 y 390×844 sin desbordamiento horizontal; las cuatro imágenes cargan a 1920×1080.
+- Privacidad, términos, soporte y página 404 abren localmente con títulos y contenido válidos.
+- La publicación remota queda pendiente de confirmación porque la copia local no contiene el directorio `.git`.
+
 ## [v0.2.0] - 2026-10-11
 
 ### Añadido

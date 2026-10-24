@@ -1,0 +1,8 @@
+{
+  "name": "icvprojects-github-pages",
+  "version": "0.8.0",
+  "private": true,
+  "scripts": {
+    "test": "node tests/run-tests.js"
+  }
+}

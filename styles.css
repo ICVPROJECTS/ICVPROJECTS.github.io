@@ -137,6 +137,7 @@ h1 { max-width: 720px; margin: 0; font-size: clamp(3rem, 6vw, 5.5rem); line-heig
 
 .pricing-section { padding-block: 7rem; }
 .pricing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 420px)); justify-content: center; gap: 1rem; }
+.pricing-grid-four { grid-template-columns: repeat(2, minmax(0, 420px)); }
 .price-card { position: relative; padding: 2rem; border: 1px solid var(--border); border-radius: 1.2rem; background: var(--surface); }
 .price-card.recommended { border-color: rgba(52, 225, 206, .48); background: linear-gradient(145deg, rgba(15, 48, 55, .95), rgba(8, 20, 31, .98)); }
 .recommendation { position: absolute; top: 0; right: 1.5rem; padding: .4rem .7rem; color: #041817; background: var(--cyan); border-radius: 0 0 .45rem .45rem; font-size: .58rem; font-weight: 900; letter-spacing: .1em; }
@@ -175,6 +176,15 @@ footer nav a { padding: .5rem; }
 .legal-page a { color: var(--cyan); text-decoration: underline; text-underline-offset: .18em; }
 .legal-page .meta { margin-bottom: 2rem; color: #718895; font-size: .82rem; }
 .back-home { display: inline-flex; margin-bottom: 2rem; color: var(--cyan); font-weight: 800; }
+.activation-card { max-width: 620px; margin: 0 auto; padding: 2rem; border: 1px solid var(--border); border-radius: 1.2rem; background: var(--surface); box-shadow: var(--shadow); }
+.activation-card label { display: block; margin: 1rem 0 .4rem; font-weight: 800; }
+.activation-card input { width: 100%; min-height: 3.25rem; padding: .75rem .9rem; border: 1px solid var(--border); border-radius: .7rem; color: var(--text); background: #07111c; font: inherit; text-transform: uppercase; }
+.activation-card input[type="email"] { text-transform: none; }
+.activation-card input:focus-visible { outline: 3px solid rgba(52,225,206,.35); border-color: var(--cyan); }
+.activation-card button { width: 100%; margin-top: 1.4rem; border: 0; cursor: pointer; font: inherit; }
+.activation-status { min-height: 3.2rem; margin: 1rem 0 0; padding: .8rem; border-radius: .6rem; color: var(--muted); background: rgba(255,255,255,.035); }
+.activation-status.error { color: #ffd0d0; background: rgba(190,45,45,.14); }
+.activation-status.success { color: #c6fff7; background: rgba(52,225,206,.09); }
 
 @media (max-width: 900px) {
   .site-header { position: relative; align-items: flex-start; }

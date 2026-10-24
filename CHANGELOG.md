@@ -1,5 +1,75 @@
 # Registro de cambios
 
+## [v0.8.0] - 2026-10-24
+
+### Añadido
+
+- Página pública de estado de publicación con avances técnicos y siete puertas pendientes antes de Seller Lounge.
+
+### Cambiado
+
+- La portada identifica la candidata v2.2.0 y enlaza el estado de publicación.
+- La página de activación describe el checkout como flujo futuro y usa “procesador autorizado” hasta cerrar el contrato, evitando presentar Paymentwall como operativo antes de su aprobación.
+- Privacidad reconoce que la URL HTTPS ya existe y mantiene como pendientes las entidades contractuales, países de tratamiento y revisión jurídica.
+- Términos dejan de afirmar que el procesador ya liquida impuestos; esa responsabilidad se publicará después del contrato y revisión profesional.
+
+### Validado
+
+- La prueba estática comprueba versión, estado público, prudencia legal, sitemap y ausencia de checkout web.
+
+## [v0.7.0] - 2026-10-24
+
+### Cambiado
+
+- `activar.html` deja de presentar pairing/correo y explica que los cuatro planes se adquieren exclusivamente desde la pantalla Licencia de ICV IPTV en el televisor.
+- La arquitectura pública queda alineada con la candidata webOS v2.2.0: Paymentwall presenta el checkout dentro de la app y la web se limita a información, soporte, privacidad y términos.
+
+### Eliminado
+
+- Formulario de código temporal y `activar.js`; GitHub Pages ya no contiene ninguna ruta capaz de solicitar un checkout móvil.
+
+### Validado
+
+- La prueba estática confirma precios, mensaje de compra en TV, ausencia de formularios/scripts de pago y permanencia de la ruta informativa en el sitemap.
+
+## [v0.6.0] - 2026-10-24
+
+### Añadido
+
+- Página `activar.html` para enlazar el código temporal del TV con el futuro checkout móvil, con validación de código/correo y explicación visible de licencia por TV.
+- Script sin dependencias que bloquea cualquier redirección mientras el endpoint comercial no esté configurado y nunca solicita datos de tarjeta.
+
+### Cambiado
+
+- Portada y términos reflejan la prueba de 7 días y los cuatro planes acordados: USD 2,00 mensual, USD 4,99 trimestral, USD 19,99 anual y USD 29,99 pago único.
+- La galería identifica la línea v2 sin presentar una captura histórica como versión vigente y el sitemap incorpora la ruta de activación.
+
+### Seguridad
+
+- Ninguna clave de Paymentwall, Supabase, instalación o IPTV se incorporó al repositorio. `API_BASE` permanece vacío hasta completar backend y sandbox.
+
+## [v0.5.0] - 2026-10-24
+
+### Cambiado
+
+- Privacidad y términos describen la sesión persistente mediante una bóveda cifrada y autenticada almacenada únicamente en el televisor.
+- Se aclaran las acciones que eliminan el acceso local y la limitación de hardware de los modelos webOS antiguos sin Keymanager3.
+
+### Seguridad
+
+- El sitio no publica URL, usuario, contraseña, clave de instalación ni contenido de la bóveda de ningún televisor.
+
+## [v0.4.0] - 2026-10-24
+
+### Cambiado
+
+- El propietario comercial visible del sitio pasa a ser ICVSTORE, conservando a Ivan Cano Velez como vendedor legal individual para los documentos y trámites que exijan identificación civil.
+- El correo de soporte, privacidad y términos cambia a `icvstore01@gmail.com` para unificar el canal de atención con la aplicación webOS.
+
+### Seguridad
+
+- La actualización es exclusivamente de identidad y contacto; no incorpora credenciales IPTV, datos de televisores ni secretos al repositorio público.
+
 ## [v0.3.0] - 2026-10-11
 
 ### Añadido

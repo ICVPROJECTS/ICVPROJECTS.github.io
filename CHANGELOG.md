@@ -1,5 +1,23 @@
 # Registro de cambios
 
+## [v0.9.0] - 2026-10-24
+
+### Cambiado
+
+- La portada elimina referencias a la versión candidata, al estado interno de publicación y a actividades de QA; conserva solo presentación, funciones, capturas, planes, preguntas, soporte y enlaces legales.
+- Las capturas usan descripciones orientadas al usuario y ya no exponen etiquetas internas de desarrollo o certificación.
+- El sitemap y la navegación se reducen a las rutas públicas necesarias.
+
+### Eliminado
+
+- `publicacion.html`, porque LG no exige publicar el avance interno del proyecto.
+- `activar.html`, porque la compra se realizará dentro de la aplicación y la web no necesita una ruta comercial intermedia.
+- Estilos asociados exclusivamente a las páginas y bloques retirados.
+
+### Corregido
+
+- Se incorpora la prueba estática referenciada por `npm test`, ausente en el repositorio remoto, para validar enlaces, rutas legales, ausencia de información interna y bloqueo de checkout web.
+
 ## [v0.8.0] - 2026-10-24
 
 ### Añadido

@@ -10,6 +10,7 @@ Sitio oficial de pre-lanzamiento de ICV IPTV, dirigido inicialmente a usuarios d
 - Repositorio público: `ICVPROJECTS/ICVPROJECTS.github.io`.
 - URL pública: `https://icvprojects.github.io`.
 - La versión v0.9.0 reduce la superficie pública a portada, privacidad, términos, soporte y recuperación 404.
+- El despliegue `pages-build-deployment #10` finalizó correctamente el 2026-10-24; portada, privacidad, términos y soporte se verificaron en producción, mientras `publicacion.html` y `activar.html` responden con la página 404 prevista.
 - Los planes y documentos legales se identifican como información de pre-lanzamiento; por diseño la web no contiene formularios, endpoints ni checkout.
 - La fuente local incluye una galería con cuatro capturas reales 1920×1080 de la candidata, retención conforme al marco colombiano, impuestos liquidados por el procesador y licencia intransferible por TV.
 - La versión v0.3.0 pasó validación a 1440×1000 y 390×844 sin desbordamiento y quedó publicada mediante `pages-build-deployment #4`; la portada y las cuatro rutas públicas se verificaron en producción.

@@ -18,6 +18,11 @@
 
 - Se incorpora la prueba estática referenciada por `npm test`, ausente en el repositorio remoto, para validar enlaces, rutas legales, ausencia de información interna y bloqueo de checkout web.
 
+### Validado
+
+- `npm test`, comprobación de recursos locales, `git diff --check` y escaneo de secretos finalizaron sin hallazgos.
+- `pages-build-deployment #10` terminó correctamente; portada, privacidad, términos y soporte se comprobaron en producción, y las dos rutas retiradas muestran la página 404 personalizada.
+
 ## [v0.8.0] - 2026-10-24
 
 ### Añadido

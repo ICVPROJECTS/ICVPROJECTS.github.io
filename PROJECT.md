@@ -9,7 +9,7 @@ Sitio oficial de pre-lanzamiento de ICV IPTV, dirigido inicialmente a usuarios d
 - Sitio estático publicado y operativo mediante GitHub Pages.
 - Repositorio público: `ICVPROJECTS/ICVPROJECTS.github.io`.
 - URL pública: `https://icvprojects.github.io`.
-- La versión v0.9.0 reduce la superficie pública a portada, privacidad, términos, soporte y recuperación 404.
+- La versión v0.9.1 conserva la superficie pública reducida de v0.9.0 y sincroniza el precio trimestral a USD 5,99.
 - El despliegue `pages-build-deployment #10` finalizó correctamente el 2026-10-24; portada, privacidad, términos y soporte se verificaron en producción, mientras `publicacion.html` y `activar.html` responden con la página 404 prevista.
 - Los planes y documentos legales se identifican como información de pre-lanzamiento; por diseño la web no contiene formularios, endpoints ni checkout.
 - La fuente local incluye una galería con cuatro capturas reales 1920×1080 de la candidata, retención conforme al marco colombiano, impuestos liquidados por el procesador y licencia intransferible por TV.
@@ -52,7 +52,7 @@ icvprojects.github.io/
 - Presentación responsive de ICV IPTV y aviso de disponibilidad futura.
 - Descripción de TV en vivo, películas, series, Magic Remote y optimización por memoria.
 - Flujo previsto de instalación, configuración, prueba de 7 días y licencia por TV.
-- Planes previstos de USD 2,00 mensual, USD 4,99 trimestral, USD 19,99 anual y USD 29,99 pago único, sin checkout activo.
+- Planes previstos de USD 2,00 mensual, USD 5,99 trimestral, USD 19,99 anual y USD 29,99 pago único, sin checkout activo.
 - Preguntas frecuentes, soporte por correo, privacidad y términos.
 - SEO básico mediante descripción, `robots.txt` y `sitemap.xml`.
 - Accesibilidad básica: enlace de salto, estructura semántica, foco visible, contraste y reducción de movimiento.

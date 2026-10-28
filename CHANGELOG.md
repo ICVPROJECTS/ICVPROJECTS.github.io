@@ -1,5 +1,16 @@
 # Registro de cambios
 
+## [v0.9.1] - 2026-10-28
+
+### Cambiado
+
+- La portada y los términos de pre-lanzamiento actualizan el plan trimestral de USD 4,99 a USD 5,99 para coincidir con el inventario Paymentwall y la candidata v2.5.1.
+- La versión documental del sitio sube a 0.9.1; el sitio continúa sin checkout, scripts ni estado interno de publicación.
+
+### Validado
+
+- La prueba estática confirma rutas legales, ausencia de checkout y contenido público mínimo; la búsqueda de referencias activas ya no encuentra el precio trimestral anterior.
+
 ## [v0.9.0] - 2026-10-24
 
 ### Cambiado

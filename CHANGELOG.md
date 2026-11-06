@@ -11,6 +11,7 @@
 ### Validado
 
 - La regresión estática verifica los SHA256 exactos de las cuatro capturas aprobadas, evitando que imágenes antiguas vuelvan a publicarse silenciosamente.
+- `npm test` aprobó y `pages-build-deployment #17` publicó correctamente el commit `26ccc6a`. En producción se comprobaron cuatro imágenes completas de 1920×1080, sus URLs `?v=2.5.3` y la ausencia de `ivancanovelez@gmail.com` e `Ivan Cano Velez` en la portada activa.
 
 ## [v1.0.0] - 2026-11-06
 

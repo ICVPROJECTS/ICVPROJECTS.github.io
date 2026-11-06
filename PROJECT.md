@@ -10,7 +10,7 @@ Sitio oficial de pre-lanzamiento de ICV IPTV, dirigido inicialmente a usuarios d
 - Repositorio público: `ICVPROJECTS/ICVPROJECTS.github.io`.
 - URL pública: `https://icvprojects.github.io`.
 - La versión v1.0.1 conserva el sitio como prelanzamiento sin checkout y publica exclusivamente capturas TV1 v2.5.3; la pantalla Licencia ya muestra `ICVSTORE`, `icvstore01@gmail.com`, cuatro planes vigentes y no expone el correo personal ni el nombre civil en imágenes promocionales.
-- El despliegue `pages-build-deployment #15` finalizó correctamente el 2026-11-06 para el commit `48aa80f`; portada, flujo de seis pasos, privacidad, términos, reembolsos, soporte y enlace SIC se verificaron en producción.
+- El despliegue `pages-build-deployment #17` finalizó correctamente el 2026-11-06 para el commit `26ccc6a`; la galería pública carga las cuatro capturas v2.5.3 a 1920×1080, sin el nombre ni el correo personal antiguos. Portada, flujo de seis pasos, privacidad, términos, reembolsos, soporte y enlace SIC permanecen operativos.
 - Los planes y documentos legales se identifican como información de prelanzamiento; por diseño la web no contiene formularios, endpoints ni checkout.
 - La fuente incluye una galería con cuatro capturas reales 1920×1080 del mismo corte v2.5.3 de TV1: Inicio, formulario vacío de playlist, catálogo demo legal y Licencia. El precio total, moneda e impuestos aplicables deberán mostrarse en el checkout aprobado; la web no afirma que el procesador asuma obligaciones tributarias del vendedor.
 - La versión v0.3.0 pasó validación a 1440×1000 y 390×844 sin desbordamiento y quedó publicada mediante `pages-build-deployment #4`; la portada y las cuatro rutas públicas se verificaron en producción.

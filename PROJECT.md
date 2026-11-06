@@ -10,9 +10,9 @@ Sitio oficial de pre-lanzamiento de ICV IPTV, dirigido inicialmente a usuarios d
 - Repositorio público: `ICVPROJECTS/ICVPROJECTS.github.io`.
 - URL pública: `https://icvprojects.github.io`.
 - La versión v1.0.0 conserva el sitio como prelanzamiento sin checkout y añade únicamente información necesaria para compra futura: términos de recurrencia, paso a paso, política de cancelación/reembolso y enlace a la SIC.
-- El despliegue `pages-build-deployment #10` finalizó correctamente el 2026-10-24; portada, privacidad, términos y soporte se verificaron en producción, mientras `publicacion.html` y `activar.html` responden con la página 404 prevista.
+- El despliegue `pages-build-deployment #15` finalizó correctamente el 2026-11-06 para el commit `48aa80f`; portada, flujo de seis pasos, privacidad, términos, reembolsos, soporte y enlace SIC se verificaron en producción.
 - Los planes y documentos legales se identifican como información de prelanzamiento; por diseño la web no contiene formularios, endpoints ni checkout.
-- La fuente local incluye una galería con cuatro capturas reales 1920×1080 de la candidata, retención conforme al marco colombiano, impuestos liquidados por el procesador y licencia intransferible por TV.
+- La fuente incluye una galería con cuatro capturas reales 1920×1080, retención conforme al marco colombiano y licencia intransferible por TV. El precio total, moneda e impuestos aplicables deberán mostrarse en el checkout aprobado; la web no afirma que el procesador asuma obligaciones tributarias del vendedor.
 - La versión v0.3.0 pasó validación a 1440×1000 y 390×844 sin desbordamiento y quedó publicada mediante `pages-build-deployment #4`; la portada y las cuatro rutas públicas se verificaron en producción.
 - La identidad comercial visible es ICVSTORE y el canal de soporte vigente es `icvstore01@gmail.com`; el vendedor legal continúa siendo Ivan Cano Velez como persona natural hasta que exista una entidad jurídica distinta.
 - El estado interno, las puertas de aprobación, las versiones candidatas y los detalles de QA permanecen exclusivamente en la documentación privada del proyecto.

@@ -8,6 +8,8 @@ const index = read('index.html');
 const sitemap = read('sitemap.xml');
 const legalRoutes = ['privacidad.html', 'terminos.html', 'reembolsos.html', 'soporte.html'];
 
+assert.ok(index.includes('href="styles.css?v=1.0.0"'), 'la portada debe invalidar la caché de estilos al publicar v1.0.0');
+
 for (const route of legalRoutes) {
   assert.ok(fs.existsSync(path.join(root, route)), `falta la ruta pública ${route}`);
   assert.ok(index.includes(`href="${route}"`), `la portada no enlaza ${route}`);

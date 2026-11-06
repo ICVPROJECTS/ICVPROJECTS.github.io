@@ -1,4 +1,5 @@
 const assert = require('node:assert/strict');
+const crypto = require('node:crypto');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -7,8 +8,21 @@ const read = (name) => fs.readFileSync(path.join(root, name), 'utf8');
 const index = read('index.html');
 const sitemap = read('sitemap.xml');
 const legalRoutes = ['privacidad.html', 'terminos.html', 'reembolsos.html', 'soporte.html'];
+const screenshotHashes = {
+  '01-home.png': '9D9CCD4EC8C1E5F741486849DE0384E1964481AB2F1A83CDF942A879E3853DEB',
+  '03-secure-login.png': 'A72B63786F4570FFD401EBAB9C9F1317E1F9B936111C1B14DFA4335166A3602E',
+  '04-demo-catalog.png': '963EF54A011111A8E6C135ACD2B1FA6E9A9790D9350C166FF65500855CD68C61',
+  '06-license.png': '3165A9FA935AFE73CEBD28ED84C1308670E9308F471CFBC4B389184C3EEA12C5',
+};
 
 assert.ok(index.includes('href="styles.css?v=1.0.0"'), 'la portada debe invalidar la caché de estilos al publicar v1.0.0');
+assert.equal((index.match(/assets\/screenshots\/.+?\?v=2\.5\.3/g) || []).length, 4, 'todas las capturas públicas deben invalidar caché y corresponder a v2.5.3');
+
+for (const [name, expectedHash] of Object.entries(screenshotHashes)) {
+  // Los hashes impiden que una captura antigua vuelva a publicar datos personales o precios obsoletos silenciosamente.
+  const data = fs.readFileSync(path.join(root, 'assets', 'screenshots', name));
+  assert.equal(crypto.createHash('sha256').update(data).digest('hex').toUpperCase(), expectedHash, `${name} no coincide con la evidencia TV1 v2.5.3 aprobada`);
+}
 
 for (const route of legalRoutes) {
   assert.ok(fs.existsSync(path.join(root, route)), `falta la ruta pública ${route}`);

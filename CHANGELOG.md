@@ -1,5 +1,17 @@
 # Registro de cambios
 
+## [v1.0.1] - 2026-11-06
+
+### Cambiado
+
+- Las cuatro capturas visibles fueron sustituidas por evidencia real TV1 v2.5.3 del mismo corte: Inicio, formulario vacío de playlist, catálogo demo legal y Licencia.
+- La pantalla Licencia pública ahora muestra `ICVSTORE`, `icvstore01@gmail.com`, versión 2.5.3 y los cuatro planes vigentes; ya no expone `Ivan Cano Velez`, `ivancanovelez@gmail.com`, prueba de 15 días ni precios antiguos.
+- Los recursos gráficos usan `?v=2.5.3` para invalidar la caché sin modificar las rutas públicas.
+
+### Validado
+
+- La regresión estática verifica los SHA256 exactos de las cuatro capturas aprobadas, evitando que imágenes antiguas vuelvan a publicarse silenciosamente.
+
 ## [v1.0.0] - 2026-11-06
 
 ### Añadido

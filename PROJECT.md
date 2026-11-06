@@ -9,10 +9,10 @@ Sitio oficial de pre-lanzamiento de ICV IPTV, dirigido inicialmente a usuarios d
 - Sitio estático publicado y operativo mediante GitHub Pages.
 - Repositorio público: `ICVPROJECTS/ICVPROJECTS.github.io`.
 - URL pública: `https://icvprojects.github.io`.
-- La versión v1.0.0 conserva el sitio como prelanzamiento sin checkout y añade únicamente información necesaria para compra futura: términos de recurrencia, paso a paso, política de cancelación/reembolso y enlace a la SIC.
+- La versión v1.0.1 conserva el sitio como prelanzamiento sin checkout y publica exclusivamente capturas TV1 v2.5.3; la pantalla Licencia ya muestra `ICVSTORE`, `icvstore01@gmail.com`, cuatro planes vigentes y no expone el correo personal ni el nombre civil en imágenes promocionales.
 - El despliegue `pages-build-deployment #15` finalizó correctamente el 2026-11-06 para el commit `48aa80f`; portada, flujo de seis pasos, privacidad, términos, reembolsos, soporte y enlace SIC se verificaron en producción.
 - Los planes y documentos legales se identifican como información de prelanzamiento; por diseño la web no contiene formularios, endpoints ni checkout.
-- La fuente incluye una galería con cuatro capturas reales 1920×1080, retención conforme al marco colombiano y licencia intransferible por TV. El precio total, moneda e impuestos aplicables deberán mostrarse en el checkout aprobado; la web no afirma que el procesador asuma obligaciones tributarias del vendedor.
+- La fuente incluye una galería con cuatro capturas reales 1920×1080 del mismo corte v2.5.3 de TV1: Inicio, formulario vacío de playlist, catálogo demo legal y Licencia. El precio total, moneda e impuestos aplicables deberán mostrarse en el checkout aprobado; la web no afirma que el procesador asuma obligaciones tributarias del vendedor.
 - La versión v0.3.0 pasó validación a 1440×1000 y 390×844 sin desbordamiento y quedó publicada mediante `pages-build-deployment #4`; la portada y las cuatro rutas públicas se verificaron en producción.
 - La identidad comercial visible es ICVSTORE y el canal de soporte vigente es `icvstore01@gmail.com`; el vendedor legal continúa siendo Ivan Cano Velez como persona natural hasta que exista una entidad jurídica distinta.
 - El estado interno, las puertas de aprobación, las versiones candidatas y los detalles de QA permanecen exclusivamente en la documentación privada del proyecto.
@@ -30,7 +30,7 @@ icvprojects.github.io/
 ├─ 404.html            recuperación de rutas inexistentes
 ├─ styles.css          sistema visual responsive y accesible
 ├─ logo-icv.png        identidad visual reutilizada de la aplicación
-├─ assets/screenshots/ cuatro capturas reales de la candidata comercial
+├─ assets/screenshots/ cuatro capturas TV1 verificadas de la candidata v2.5.3
 ├─ robots.txt          reglas públicas para rastreadores
 ├─ sitemap.xml         rutas públicas principales
 ├─ .nojekyll           evita transformaciones Jekyll innecesarias
@@ -60,7 +60,7 @@ icvprojects.github.io/
 - SEO básico mediante descripción, `robots.txt` y `sitemap.xml`.
 - Accesibilidad básica: enlace de salto, estructura semántica, foco visible, contraste y reducción de movimiento.
 - Maquetación verificada a 1440×1000 y 390×844 sin desbordamiento horizontal.
-- Galería responsive de pantallas reales: Inicio, acceso IPTV protegido localmente, catálogo demo legal y Licencia.
+- Galería responsive de pantallas v2.5.3: Inicio, formulario vacío de playlist, catálogo demo legal y Licencia con identidad/soporte vigentes.
 
 ## Particularidades y lecciones aprendidas
 
@@ -74,6 +74,7 @@ icvprojects.github.io/
 - Privacidad y términos son informativos de pre-lanzamiento. Deben actualizarse después de definir procesador, hosting, retención, domicilio legal y reglas comerciales, y someterse a revisión jurídica antes de la publicación en tienda.
 - ICVSTORE es la marca y el propietario comercial mostrado al usuario; no debe sustituir el nombre legal de la persona natural en trámites KYC, fiscales o contractuales mientras no exista una sociedad registrada con ese nombre.
 - La marca utiliza el activo maestro de la aplicación para mantener continuidad visual sin introducir recursos remotos.
+- Las cuatro capturas públicas están fijadas por SHA256 en la prueba estática; esto evita reintroducir silenciosamente la antigua pantalla v2.0.0 con nombre, correo y precios obsoletos.
 - Privacidad y términos explican que el acceso IPTV se conserva en una bóveda cifrada local para mantener la sesión. También declaran que los webOS antiguos sin Keymanager3 no ofrecen protección TEE frente a un sistema completamente comprometido.
 
 ## Próximos pasos

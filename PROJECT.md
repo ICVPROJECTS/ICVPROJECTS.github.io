@@ -9,9 +9,9 @@ Sitio oficial de pre-lanzamiento de ICV IPTV, dirigido inicialmente a usuarios d
 - Sitio estático publicado y operativo mediante GitHub Pages.
 - Repositorio público: `ICVPROJECTS/ICVPROJECTS.github.io`.
 - URL pública: `https://icvprojects.github.io`.
-- La versión v0.9.1 conserva la superficie pública reducida de v0.9.0 y sincroniza el precio trimestral a USD 5,99.
+- La versión v1.0.0 conserva el sitio como prelanzamiento sin checkout y añade únicamente información necesaria para compra futura: términos de recurrencia, paso a paso, política de cancelación/reembolso y enlace a la SIC.
 - El despliegue `pages-build-deployment #10` finalizó correctamente el 2026-10-24; portada, privacidad, términos y soporte se verificaron en producción, mientras `publicacion.html` y `activar.html` responden con la página 404 prevista.
-- Los planes y documentos legales se identifican como información de pre-lanzamiento; por diseño la web no contiene formularios, endpoints ni checkout.
+- Los planes y documentos legales se identifican como información de prelanzamiento; por diseño la web no contiene formularios, endpoints ni checkout.
 - La fuente local incluye una galería con cuatro capturas reales 1920×1080 de la candidata, retención conforme al marco colombiano, impuestos liquidados por el procesador y licencia intransferible por TV.
 - La versión v0.3.0 pasó validación a 1440×1000 y 390×844 sin desbordamiento y quedó publicada mediante `pages-build-deployment #4`; la portada y las cuatro rutas públicas se verificaron en producción.
 - La identidad comercial visible es ICVSTORE y el canal de soporte vigente es `icvstore01@gmail.com`; el vendedor legal continúa siendo Ivan Cano Velez como persona natural hasta que exista una entidad jurídica distinta.
@@ -25,6 +25,7 @@ icvprojects.github.io/
 ├─ index.html          página principal y narrativa comercial
 ├─ privacidad.html     política informativa de privacidad
 ├─ terminos.html       términos informativos de pre-lanzamiento
+├─ reembolsos.html     cancelación, retracto, reversión y reembolsos
 ├─ soporte.html        instrucciones y correo de soporte
 ├─ 404.html            recuperación de rutas inexistentes
 ├─ styles.css          sistema visual responsive y accesible
@@ -53,6 +54,8 @@ icvprojects.github.io/
 - Descripción de TV en vivo, películas, series, Magic Remote y optimización por memoria.
 - Flujo previsto de instalación, configuración, prueba de 7 días y licencia por TV.
 - Planes previstos de USD 2,00 mensual, USD 5,99 trimestral, USD 19,99 anual y USD 29,99 pago único, sin checkout activo.
+- Paso a paso de compra futura dentro de la aplicación, sin formularios ni captura de datos financieros en la web.
+- Política pública de cancelación, retracto, reversión y reembolsos.
 - Preguntas frecuentes, soporte por correo, privacidad y términos.
 - SEO básico mediante descripción, `robots.txt` y `sitemap.xml`.
 - Accesibilidad básica: enlace de salto, estructura semántica, foco visible, contraste y reducción de movimiento.
@@ -64,6 +67,8 @@ icvprojects.github.io/
 - El repositorio es público: nunca deben incluirse credenciales IPTV, llaves de pago, tokens, datos de TVs, IPs privadas ni código propietario de la aplicación.
 - GitHub Pages solo sirve contenido estático; no puede ser el backend de licencias ni recibir webhooks de pago.
 - Los planes permanecen marcados como `Próximamente` porque mostrar un checkout sin backend validado podría inducir al usuario a creer que el cobro ya está operativo.
+- Mensual y trimestral son recurrentes; anual dura 12 meses sin renovación automática y pago único no tiene vencimiento programado. La web no debe volver a describir el anual como recurrente.
+- Paymentwall exige identidad/dirección comercial, términos, privacidad, reembolsos, soporte y HTTPS antes de live. NIT, dirección de notificación y teléfono siguen sin datos verificados; no se inventan ni se publican mientras el sitio no vende.
 - La página pública no contiene JavaScript, endpoint ni formulario de compra; publicar GitHub Pages nunca puede habilitar cobros por accidente.
 - Las versiones, checklists, proveedores pendientes y resultados de QA no pertenecen a la comunicación pública; se conservan en el expediente privado para no exponer información interna ni confundir a usuarios.
 - Privacidad y términos son informativos de pre-lanzamiento. Deben actualizarse después de definir procesador, hosting, retención, domicilio legal y reglas comerciales, y someterse a revisión jurídica antes de la publicación en tienda.
@@ -73,8 +78,9 @@ icvprojects.github.io/
 
 ## Próximos pasos
 
-1. Crear/desplegar Supabase y completar Paymentwall; el checkout real se habilita únicamente en la app del TV.
-2. Revisar jurídicamente privacidad y términos; reemplazar los avisos provisionales con Supabase/Paymentwall únicamente después de aceptar sus contratos.
-3. Conectar un dominio propio en el futuro sin cambiar el repositorio ni el ID de la aplicación.
-4. Cambiar los avisos `Próximamente` únicamente después de validar backend, proveedor de pagos, pruebas sandbox y políticas finales.
-5. Mantener la rama `main` libre de secretos y validar las rutas públicas después de cada publicación.
+1. Mantener deshabilitados los cobros mientras LG QA y Paymentwall live no estén aprobados.
+2. Incorporar NIT, dirección de notificación y teléfono verificados antes de abrir ventas; no usar marcadores ni datos inventados.
+3. Confirmar con Paymentwall la elegibilidad del vendedor colombiano, el Fee Schedule y al menos un método live compatible con los planes recurrentes.
+4. Revisar jurídicamente privacidad, términos y reembolsos antes del lanzamiento comercial.
+5. Cambiar los avisos `Próximamente` únicamente después de verificar checkout final, precio total en la moneda aplicable, aceptación expresa y comprobante.
+6. Mantener la rama `main` libre de secretos y validar las rutas públicas después de cada publicación.

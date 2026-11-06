@@ -1,5 +1,23 @@
 # Registro de cambios
 
+## [v1.0.0] - 2026-11-06
+
+### Añadido
+
+- Sección pública `Cómo adquirir un plan` con seis pasos dentro de la aplicación, sin formularios, scripts ni checkout web.
+- Política independiente de cancelación, retracto, reversión y reembolsos, enlazada desde portada, soporte y sitemap.
+- Enlace visible a la Superintendencia de Industria y Comercio como autoridad colombiana de protección al consumidor.
+
+### Cambiado
+
+- Los planes mensual y trimestral explican su renovación automática; el anual queda corregido a 12 meses sin renovación automática y el pago único conserva ausencia de renovación.
+- Privacidad identifica a Paymentwall, Supabase y GitHub Pages según su función prevista, sin publicar secretos ni afirmar que los cobros están activos.
+- Términos explican precio final, aceptación expresa, comprobante y activación únicamente después de confirmación segura.
+
+### Validado
+
+- Las pruebas estáticas exigen el flujo informativo, la política de reembolsos, las condiciones de recurrencia, el enlace a la SIC y la ausencia de checkout real.
+
 ## [v0.9.1] - 2026-10-28
 
 ### Cambiado

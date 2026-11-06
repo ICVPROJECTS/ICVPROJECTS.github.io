@@ -162,6 +162,9 @@ details p { margin: 0; padding: 0 .2rem 1.4rem; color: var(--muted); }
 .contact-section > p:not(.eyebrow) { color: var(--muted); }
 
 footer { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 2rem; width: min(calc(100% - 2rem), var(--max)); margin: 0 auto; padding: 2rem 0 2.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .78rem; }
+.footer-brand, footer nav, .footer-status { min-width: 0; }
+/* Los enlaces legales deben envolver: la etiqueta visible de la SIC no puede ensanchar la página en móviles. */
+footer nav { flex-wrap: wrap; }
 .footer-brand { display: flex; align-items: center; gap: .75rem; }
 .footer-brand strong, .footer-brand span { display: block; }
 .footer-brand strong { color: var(--text); }

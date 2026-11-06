@@ -17,6 +17,7 @@
 ### Validado
 
 - Las pruebas estáticas exigen el flujo informativo, la política de reembolsos, las condiciones de recurrencia, el enlace a la SIC y la ausencia de checkout real.
+- El pie legal envuelve sus enlaces y no genera desplazamiento horizontal en la vista móvil.
 
 ## [v0.9.1] - 2026-10-28
 

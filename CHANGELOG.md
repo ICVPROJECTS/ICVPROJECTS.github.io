@@ -1,5 +1,47 @@
 # Registro de cambios
 
+## [v1.2.0] - 2026-11-07
+
+### Añadido
+
+- Comparación compacta de los cuatro planes en una cuadrícula de escritorio, con recurrencia y vigencia visibles sin depender de textos internos.
+- Proceso de adquisición resumido en cuatro pasos reconocibles desde el televisor.
+- Encabezado, pie y sistema de tarjetas compartidos por soporte, privacidad, términos, reembolsos y 404.
+
+### Cambiado
+
+- La portada adopta una composición profesional y más corta: hero en dos columnas, franja de beneficios, funciones, galería en mosaico, planes, adquisición, preguntas y soporte.
+- Todo el contenido público se reescribe para clientes y elimina referencias a TV1, versiones internas, QA, sandbox, prelanzamiento, revisión de LG, cobros deshabilitados y proveedores técnicos no confirmados.
+- Soporte organiza la orientación en tarjetas y conserva `icvstore01@gmail.com` como único canal con radicado y seguimiento manuales.
+- Privacidad, términos y reembolsos conservan obligaciones sobre datos, recurrencia, retracto y devolución, pero eliminan estados operativos y lenguaje de preparación interna.
+- La caché de estilos y capturas se invalida con `v1.2.0`; el paquete local también pasa a versión 1.2.0.
+
+### Corregido
+
+- La galería deja de describir las capturas mediante dispositivo y versión de desarrollo.
+- Los planes dejan de mostrar avisos de compra deshabilitada y comunican exclusivamente precio, vigencia, renovación y alcance de la licencia.
+- La disponibilidad se explica por país, modelo y versión de webOS sin exponer el avance de certificación.
+
+### Validado
+
+- `npm test` comprueba las seis páginas, rutas legales, correo único, cuatro precios, recurrencia, protección al consumidor, hashes de capturas y ausencia de lenguaje interno.
+- Los cambios permanecen en la copia local; no se publicó ni se modificó el sitio activo.
+
+## [v1.1.0] - 2026-11-06
+
+### Cambiado
+
+- La copia local establece `icvstore01@gmail.com` como único canal para soporte, PQR, cancelación, retracto, reversión, reembolso y privacidad.
+- El radicado, fecha/hora, acuse y seguimiento se gestionarán manualmente dentro del mismo hilo; no se ofrecen formularios, teléfono, chat, WhatsApp o portal de tickets.
+- La portada deja de ofrecer la pantalla Licencia como canal de cancelación.
+- Reembolsos incorpora el plazo de 15 días calendario asociado al retracto electrónico cuando proceda, la reclamación de reversión dentro de cinco días hábiles y el medio de devolución preferido por el consumidor.
+- Privacidad incorpora los términos verificables de consultas y reclamos de datos; Términos deja pendiente resolver la presentación final en COP, impuestos y costos antes de live.
+
+### Validado
+
+- La regresión estática exige correo único, radicado manual, plazo de 15 días calendario, elección del medio de devolución y ausencia de la frase anterior “método original cuando sea posible”.
+- Cambios preparados únicamente en la copia local. No se publicó GitHub Pages y el sitio activo continúa en v1.0.1.
+
 ## [v1.0.1] - 2026-11-06
 
 ### Cambiado

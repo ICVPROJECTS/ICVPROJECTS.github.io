@@ -25,7 +25,9 @@
 ### Validado
 
 - `npm test` comprueba las seis páginas, rutas legales, correo único, cuatro precios, recurrencia, protección al consumidor, hashes de capturas y ausencia de lenguaje interno.
-- Los cambios permanecen en la copia local; no se publicó ni se modificó el sitio activo.
+- El commit `cb40357` se publicó correctamente mediante `pages-build-deployment #42427736521`.
+- En producción se comprobaron portada, soporte, privacidad, términos, reembolsos y 404; todas usan estilos v1.2.0 y no exponen lenguaje interno.
+- La vista pública de 419×524 px no presenta desbordamiento horizontal y las cuatro capturas cargan a 1920×1080.
 
 ## [v1.1.0] - 2026-11-06
 

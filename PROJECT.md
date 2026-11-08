@@ -6,15 +6,15 @@ Sitio oficial de ICV IPTV, dirigido a usuarios de televisores LG webOS. Presenta
 
 ## Estado actual
 
-- La fuente local está en versión web v1.2.0 y aún no ha sido publicada.
+- La versión web v1.2.0 está publicada en `https://icvprojects.github.io` desde el commit `cb40357`.
 - La portada tiene una estructura comercial compacta: presentación en dos columnas, beneficios, funciones, galería en mosaico, cuatro planes comparables, adquisición en cuatro pasos, preguntas frecuentes y soporte.
 - El contenido público no menciona TV1, versiones internas de la aplicación, QA, sandbox, prelanzamiento, cobros deshabilitados, Supabase o Paymentwall.
 - Soporte, privacidad, términos, reembolsos y 404 comparten identidad visual, navegación y lenguaje orientado al cliente.
 - `icvstore01@gmail.com` es el único canal de soporte, PQR, cancelación, retracto, reversión, reembolso y privacidad. El radicado y seguimiento se gestionan manualmente en el mismo hilo.
 - La web conserva los avisos necesarios: ICV IPTV no vende ni incluye contenido, cada licencia corresponde a un televisor, mensual y trimestral son recurrentes, anual dura 12 meses sin renovación automática y pago único no se renueva.
 - `npm test` valida contenido, rutas, precios, recurrencia, correo único, protección legal, ausencia de lenguaje interno y hashes de las capturas; la validación final está aprobada.
-- La estructura responsive quedó definida para escritorio, tablet y móvil sin anchos fijos que obliguen desplazamiento horizontal. El navegador integrado no puede acceder a direcciones locales, por lo que la comprobación visual desde ese navegador solo podrá hacerse tras una publicación o vista previa expresamente autorizada.
-- El sitio público activo en `https://icvprojects.github.io` no se modificó durante esta unidad; la publicación requiere una autorización específica posterior a la revisión visual.
+- La estructura responsive quedó definida para escritorio, tablet y móvil sin anchos fijos que obliguen desplazamiento horizontal. En producción, el navegador integrado confirmó una vista de 419×524 px sin desbordamiento horizontal.
+- `pages-build-deployment #42427736521` completó correctamente construcción, reporte y despliegue. En producción se comprobaron portada, soporte, privacidad, términos, reembolsos, 404, estilos v1.2.0 y las cuatro capturas de 1920×1080.
 
 ## Estructura del proyecto
 
@@ -74,7 +74,7 @@ website-review/
 
 ## Próximos pasos
 
-1. Presentar la fuente local v1.2.0 al propietario y obtener autorización específica de publicación.
-2. Publicar v1.2.0 únicamente después de esa autorización; la aprobación de los cambios locales no autorizó el despliegue.
-3. Verificar visualmente portada, tablet, móvil y todas las rutas legales mediante el navegador integrado en la URL publicada.
-4. Corregir y documentar cualquier hallazgo de producción antes de considerar cerrada la publicación.
+1. Mantener la web sincronizada con las condiciones comerciales definitivas que se muestren dentro de la aplicación.
+2. Volver a validar precios, moneda, impuestos y métodos antes de habilitar ventas al público.
+3. Revisar cada actualización futura en móvil y escritorio después de su publicación.
+4. Mantener el repositorio público libre de secretos, estados internos y datos personales no necesarios.
